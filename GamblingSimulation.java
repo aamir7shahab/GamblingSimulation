@@ -2,7 +2,7 @@ class GamblingSimulation {
 	//Constant
 	public static final int STARTING_DAILY_STAKE = 100;
 	public static final int BET = 1;
-	public static final int DAYS = 20;
+	public static final int DAYS = 30;
 	
 	//Global variables
 	public static int totalWin = 0;
@@ -15,7 +15,6 @@ class GamblingSimulation {
 
 	//method for checking resign
 	private static int checkResign(int startingStake, int endDayAmount) {
-
 		//initialising control variable
 		double winResignAmt = 1.5 * startingStake;
 		double lossResignAmt = 0.5 * startingStake;
@@ -46,8 +45,9 @@ class GamblingSimulation {
 			}
 			totalWin += dailyWin;
 			totalLoss += dailyLoss;
+			System.out.println("On day "+ day +"\tgambler won:\t"+ dailyWin +"\tand lost:\t"+ dailyLoss +"\tand day result:\t"+ (dailyWin - dailyLoss) +".");
 		}
-		System.out.println("After "+DAYS+ " days :");
+		
 		System.out.println("Total amount won : "+ totalWin);
 		System.out.println("Total amount lost : "+ totalLoss);
 		System.out.println("Net amount : "+ (totalWin-totalLoss));
