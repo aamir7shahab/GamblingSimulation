@@ -61,7 +61,6 @@ class GamblingSimulation {
 			if (maxAmtLoss == dailyLoss)
 				unluckyDay = day;
 
-
 			System.out.println("On day "+ day +"\tgambler won:\t"+ dailyWin +"\tand lost:\t"+ dailyLoss +"\tand day result:\t"+ (dailyWin - dailyLoss) +".");
 		}
 
@@ -69,7 +68,7 @@ class GamblingSimulation {
 		System.out.println("Total amount lost : "+ totalLoss);
 		System.out.println("Net amount : "+ (totalWin-totalLoss));
 		System.out.println("Lucky day is Day "+luckyDay+" amount won is "+maxAmtWon+".");
-		System.out.println("Unlucky day is Day "+unluckyDay+" amount won is "+maxAmtLoss+".");
+		System.out.println("Unlucky day is Day "+unluckyDay+" amount lost is "+maxAmtLoss+".");
 
 	}
 }
