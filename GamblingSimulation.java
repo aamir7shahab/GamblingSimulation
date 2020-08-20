@@ -75,3 +75,5 @@ class GamblingSimulation {
 		}while((totalWin-totalLoss) > 0);//if net amount is greater than 0 then continue
 	}
 }
+
+// u8 use case
