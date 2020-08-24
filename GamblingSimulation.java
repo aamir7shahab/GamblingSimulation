@@ -56,6 +56,7 @@ class GamblingSimulation {
 				totalLoss += dailyLoss;
 				netTotal += (dailyWin - dailyLoss);
 
+				// functionality to check lucky day and unlucky day
 				if (luckyDayAmt < netTotal) {
 					luckyDayAmt = netTotal;
 					luckyDay = day;
